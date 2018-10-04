@@ -1,0 +1,26 @@
+{
+    "use_virtualenv": false,
+    "serializer": "json",
+    "topology_specs": "topologies/",
+    "virtualenv_specs": "virtualenvs/",
+    "envs": {
+        "prod": {
+            "user": "ubuntu",
+            "nimbus": "52.36.32.34",
+            "workers": [
+                "52.36.32.34",
+                "34.214.82.169"
+            ],
+            "log": {
+                "path": "/home/ubuntu/storm_log/streamparse",
+                "file": "pystorm_{topology_name}_{component_name}_{task_id}_{pid}.log",
+                "max_bytes": 100000,
+                "backup_count": 10,
+                "level": "info"
+            },
+            "use_ssh_for_nimbus": true,
+            "virtualenv_root": "/home/ubuntu/data/virtualenvs"
+        }
+    }
+}
+
