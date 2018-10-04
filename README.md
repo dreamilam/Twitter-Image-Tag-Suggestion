@@ -1,3 +1,3 @@
 # image-tagger
 
-An online tagger application for uploaded images that runs on a Big Data Architecture and predicts exemplary trending hashtags
+A tag suggestion application for images uploaded to twitter that runs on a real time data pipeline and predicts exemplary trending hashtags
